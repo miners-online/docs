@@ -3,105 +3,113 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-    <!-- Hero Section -->
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-        <h1 class="text-5xl sm:text-6xl font-bold mb-6 leading-tight">
-            A Community <span class="gradient-text">Minecraft Experience</span>
-        </h1>
-        <p class="text-lg text-muted mb-12 max-w-2xl mx-auto">
-            Join Miners Online, a community-driven Minecraft SMP where Java and Bedrock players build together in the same world. Survival gameplay with social, economic, and administrative support.
-        </p>
-    </section>
-
-    <!-- Join Addresses -->
-    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 class="text-3xl font-bold mb-12 text-center">How to Join</h2>
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
-            <!-- Java Edition -->
-            <div class="card">
-                <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
-                    <span>☕</span> Java Edition
-                </h3>
-                <p class="text-muted mb-4">
-                    Supports versions 1.8 through 1.21.11
-                </p>
-                <div class="mb-4">
-					<div class="flex flex-col sm:flex-row gap-4 ">
-						<div class="flex-1"> 
-							<p class="text-sm text-muted mb-2">Server Address:</p>
-							<div class="copy-code">play.minersonline.uk</div>
-						</div>
-						<div>
-							<p class="text-sm text-muted mb-2">Server Port:</p>
-							<div class="copy-code">25565</div>
-						</div>
-					</div>
-                </div>
-            </div>
-
-            <!-- Bedrock Edition -->
-            <div class="card">
-                <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
-                    <span>🎮</span> Bedrock Edition
-                </h3>
-                <p class="text-muted mb-4">
-                    Windows 10/11, Nintendo Switch, Mobile & More
-                </p>
-                <div class="mb-4">
-					<div class="flex flex-col sm:flex-row gap-4 ">
-						<div class="flex-1"> 
-							<p class="text-sm text-muted mb-2">Server Address:</p>
-							<div class="copy-code">be.mc.minersonline.uk</div>
-						</div>
-						<div>
-							<p class="text-sm text-muted mb-2">Server Port:</p>
-							<div class="copy-code">19132</div>
-						</div>
-					</div>
-					<p class="text-sm text-muted mt-4">
-					On console editions, you need to configure your DNS settings according to <a class="link" href="https://geysermc.org/wiki/geyser/using-geyser-with-consoles/">Geyser's instructions.</a>
-					</p>
-                </div>
-            </div>
-        </div>
-        <p class="text-center text-muted">
-            💡 <strong>Tip:</strong> Both Java and Bedrock players play together in the same world!
-        </p>
-    </section>
+	<!-- Hero Section -->
+	<section class="hero bg-base-200"> 
+		<div class="hero-content text-center mb-12 mt-12">
+			<div class="max-w-md">
+				<h1 class="text-5xl font-bold">A Community Minecraft Experience</h1>
+				<p class="py-6">
+					Join Miners Online, a community-driven Minecraft SMP where Java and Bedrock players build together in the same world. Survival gameplay with social, economic, and administrative support.
+				</p>
+				<a href="#how-to-join" class="btn btn-primary">Get Started</a>
+			</div>
+		</div>
+	</section>
 
     <!-- Server Info -->
     <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 class="text-3xl font-bold mb-12 text-center">Server Details</h2>
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="card text-center">
-                <div class="text-4xl mb-4">📦</div>
-                <h3 class="text-xl font-bold mb-2">Survival Gameplay</h3>
-                <p class="text-muted">Vanilla survival with plugins for social, economic, and administrative features.</p>
+            <div class="card bg-base-100 shadow-sm">
+				<div class="card-body">
+					<h3 class="card-title"><span>🌍</span>Survival Gameplay</h3>
+					Vanilla survival with plugins for social, economic, and administrative features.
+				</div>
             </div>
-            <div class="card text-center">
-                <div class="text-4xl mb-4">🔄</div>
-                <h3 class="text-xl font-bold mb-2">Cross-Platform</h3>
-                <p class="text-muted">Java & Bedrock players together. Running on 1.21.10</p>
+            <div class="card bg-base-100 shadow-sm">
+				<div class="card-body">
+					<h3 class="card-title"><span>🔄</span>Cross-Platform</h3>
+					Play together on Java & Bedrock editions. Running on 1.21.10
+				</div>
             </div>
-            <div class="card text-center">
-                <div class="text-4xl mb-4">👥</div>
-                <h3 class="text-xl font-bold mb-2">Community</h3>
-                <p class="text-muted">Join our Discord to connect with other players and get help.</p>
+            <div class="card bg-base-100 shadow-sm">
+                <div class="card-body">
+					<h3 class="card-title"><span>👥</span>Community</h3>
+					Join our Discord to connect with other players and get help.
+				</div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="card text-center">
-            <h2 class="text-3xl font-bold mb-4">Ready to Join?</h2>
-            <p class="text-muted mb-8">Pick your platform and join the Miners Online community.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-				<a href="https://discord.gg/aeRReEaNnm" target="_blank" class="btn-primary">Join Discord</a>
-				<a href="https://github.com/miners-online" target="_blank" class="btn-secondary">View on GitHub</a>
+		<h2 class="text-3xl font-bold mb-12 text-center">Ready to Join?</h2>
+        <div class="card bg-base-100 shadow-sm">
+            <div class="card-body">
+				<p class="card-title">Pick your platform and join the Miners Online community.</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="https://discord.gg/aeRReEaNnm" target="_blank" class="btn-primary">Join Discord</a>
+					<a href="https://github.com/miners-online" target="_blank" class="btn-secondary">View on GitHub</a>
 
+				</div>
+			</div>
+        </div>
+    </section>
+
+    <!-- Join Addresses -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 id="how-to-join" class="text-3xl font-bold mb-12 text-center">How to Join</h2>
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- Java Edition -->
+            <div class="card bg-base-100 shadow-sm">
+				<div class="card-body">
+					<h3 class="card-title">
+						<span>☕</span> Java Edition
+					</h3>
+					<div class="mt-4">
+						<p class="mb-4">Supports versions 1.8 through 1.21.11</p>
+						<div class="flex flex-col sm:flex-row gap-4 ">
+							<div class="flex-1"> 
+								<p>Server Address:</p>
+								<div class="copy-code">play.minersonline.uk</div>
+							</div>
+							<div>
+								<p class="text-sm text-muted mb-2">Server Port:</p>
+								<div class="copy-code">25565</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+
+            <!-- Bedrock Edition -->
+            <div class="card bg-base-100 shadow-sm">
+				<div class="card-body">
+					<h3 class="card-title">
+						<span>🎮</span> Bedrock Edition
+					</h3>
+					<div class="mt-4">
+						<p class="mb-4">Windows 10/11, Nintendo Switch, Mobile & More</p>
+						<div class="flex flex-col sm:flex-row gap-4 ">
+							<div class="flex-1"> 
+								<p>Server Address:</p>
+								<div class="copy-code">be.mc.minersonline.uk</div>
+							</div>
+							<div>
+								<p>Server Port:</p>
+								<div class="copy-code">19132</div>
+							</div>
+						</div>
+						<p class="text-sm text-muted mt-4">
+						On console editions, you need some customisations according to <a class="link" href="https://geysermc.org/wiki/geyser/using-geyser-with-consoles/">Geyser's instructions.</a>
+						</p>
+					</div>
+				</div>
             </div>
         </div>
+        <p class="text-center text-muted">
+            💡 <strong>Tip:</strong> Both Java and Bedrock players play together in the same world!
+        </p>
     </section>
 </Layout>
 
