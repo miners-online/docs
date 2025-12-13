@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-.copy-code {
+.code-block {
     font-family: 'Monaco', 'Courier New', monospace;
     background-color: var(--color-base-300);
     border-radius: 0.375rem;
