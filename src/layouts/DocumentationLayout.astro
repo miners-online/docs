@@ -1,0 +1,36 @@
+---
+import Layout from "./Layout.astro";
+import { getCollection } from "astro:content";
+
+interface Props {
+	title?: string;
+    description?: string;
+}
+
+const docs = await getCollection("docs");
+
+const navLinks = docs.map((doc) => ({
+    title: doc.data.title,
+    href: `/docs/${doc.id}`,
+}));
+
+const { title } = Astro.props;
+---
+
+<Layout title={title} description={Astro.props.description}>
+    <!-- Layout: menu on left side, content on right -->
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <aside class="w-full md:w-64 bg-base-200 border-r border-base-300 p-6">
+            <nav class="space-y-4">
+                {navLinks.map((link) => (
+                    <a href={link.href} class="block link link-hover">{link.title}</a>
+                ))}
+            </nav>
+        </aside>
+        <main class="flex-1 p-6 bg-base-100">
+            <div class="prose prose-lg max-w-full">
+                <slot />
+            </div>
+        </main>
+    </div>
+</Layout>
