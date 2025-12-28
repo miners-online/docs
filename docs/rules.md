@@ -36,14 +36,25 @@ tags: ['rules', 'guidelines', 'community']
 3. **No Exploiting**  
    Bugs, glitches, or unintended mechanics may not be abused.
 
-4. **No Griefing**  
-   Deliberately destroying or sabotaging other players’ work for malicious reasons is not allowed.
-
-5. **No Harassment Through Gameplay**  
+4. **No Harassment Through Gameplay**  
    Repeatedly targeting a player in ways intended to annoy, intimidate, or disrupt them is prohibited.
 
-6. **Server Stability**  
+5. **Server Stability**  
    Intentionally causing lag, crashes, or instability is not allowed.
+
+## Land & Property Rules
+
+Most land management is handled automatically through the [Homestead plugin](https://tayebyassine.github.io/Homestead/). Please refer to its documentation for detailed usage instructions. The following additional rules apply:
+
+1. **No Griefing**  
+    Deliberately destroying or sabotaging other players’ work for malicious reasons is not allowed.
+2. **No Panhandle Regions**
+    Each area of interest (base, farm, shop, etc.) must be protected in its own region, do not create a region with an excessively large panhandle to cover multiple areas. See the [Homestead Documentation](https://tayebyassine.github.io/Homestead/Usage/Creating%20a%20new%20Region/) for more information. **Another benefit, you won't hit region size limits as quickly.**<details>
+   <summary>Example of a panhandle region</summary>
+
+    ![Panhandle Region Example](https://media.discordapp.net/attachments/1449426981681627382/1454884599988748474/image.png?ex=6952b65f&is=695164df&hm=082f380bb71b16d3756450c52465fbd198fcb42e142a07e67e77922c025ac0bf&=&format=webp&quality=lossless&width=1236&height=723)
+
+    </details>
 
 ## Economy Rules
 
