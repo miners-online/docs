@@ -1,36 +1,68 @@
 ---
 import Layout from "./Layout.astro";
 import { getCollection } from "astro:content";
+import SidebarItem from "./SidebarItem.astro";
+import type { NavFolder } from '../types';
 
 interface Props {
-	title?: string;
-    description?: string;
+  title?: string;
+  description?: string;
 }
 
 const docs = await getCollection("docs");
 
-const navLinks = docs.map((doc) => ({
-    title: doc.data.title,
-    href: `/docs/${doc.id}`,
-}));
+const rootFolder: NavFolder = {
+  title: "Documentation",
+  children: [],
+};
+docs.forEach((doc) => {
+  const parts = doc.id.split("/");
+  let currentFolder = rootFolder;
+
+  parts.forEach((part, index) => {
+    const isLastPart = index === parts.length - 1;
+    if (isLastPart) {
+      // It's a file
+      currentFolder.children.push({
+        title: doc.data.title,
+        href: `/docs/${doc.id}`,
+      });
+    } else {
+      // It's a folder
+      const newTitle = part
+        .split("-")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+
+      let nextFolder = currentFolder.children.find(
+        (child) => "title" in child && child.title === newTitle
+      ) as NavFolder | undefined;
+
+      if (!nextFolder) {
+        nextFolder = { title: newTitle, children: [] };
+        currentFolder.children.push(nextFolder);
+      }
+
+      currentFolder = nextFolder;
+    }
+  });
+});
+
 
 const { title } = Astro.props;
 ---
 
 <Layout title={title} description={Astro.props.description}>
-    <!-- Layout: menu on left side, content on right -->
-    <div class="flex flex-col md:flex-row min-h-screen">
-        <aside class="w-full md:w-64 bg-base-200 border-r border-base-300 p-6">
-            <nav class="space-y-4">
-                {navLinks.map((link) => (
-                    <a href={link.href} class="block link link-hover">{link.title}</a>
-                ))}
-            </nav>
-        </aside>
-        <main class="flex-1 p-6 bg-base-100">
-            <div class="prose prose-lg max-w-full">
-                <slot />
-            </div>
-        </main>
-    </div>
+  <div class="flex flex-col md:flex-row min-h-screen">
+    <ul class="menu w-full md:w-64 bg-base-200 rounded-box w-56">
+      {rootFolder.children.map((item) => (
+        <SidebarItem item={item} />
+      ))}
+    </ul>
+    <main class="flex-1 p-6 bg-base-100">
+      <div class="prose prose-lg max-w-full">
+        <slot />
+      </div>
+    </main>
+  </div>
 </Layout>
