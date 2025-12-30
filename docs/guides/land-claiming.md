@@ -23,7 +23,10 @@ More information on regions can be found in the [Homestead Documentation](https:
 
 Creating a region does not claim land automatically. Players must first create a region and then claim land within that region.
 
-To create a region, follow these steps:
+Creating a region can be done with the following command:
 > 1. Use the `/region create <region_name>` command to create a new region.
-> 2. Use the `/hs set target <region_name>` command to choose the region you want to work with.
-> 3. Use the `/claim` command to claim the current chunk you are standing in for the selected region.
+
+To claim chunks, follow these steps:
+> 1. Use the `/hs set target <region_name>` command to choose the region you want to work with.
+> 2. Use the `/claim` command to claim the current chunk you are standing in for the selected region.
+> 3. Use the `/unclaim` command to unclaim the current chunk you are standing in if needed.
