@@ -1,17 +1,8 @@
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
+import { getAuthors } from '../.vitepress/data.mts'
 
-const members = [
-  {
-    avatar: 'https://avatars.githubusercontent.com/u/41990982?v=4&size=64',
-    name: 'Samuel Hulme',
-    title: 'Founder & Developer',
-    links: [
-      { icon: 'github', link: 'https://github.com/samuelhulme' },
-      { icon: 'lucide:link', link: 'https://samsblog.minersonline.uk' }
-    ]
-  }
-]
+const members = getAuthors()
 </script>
 
 # Our Team

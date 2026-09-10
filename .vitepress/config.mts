@@ -12,6 +12,8 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: 'https://github.com/miners-online/.github/blob/main/profile/logos/favicon-160x160-min.png?raw=true' }]
   ],
+
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: 'https://github.com/miners-online/.github/blob/main/profile/logos/favicon-160x160-min.png?raw=true',
