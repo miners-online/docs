@@ -16,9 +16,15 @@ export default defineConfig({
           { text: 'Survival', link: '/play/survival' },
           { text: 'City World', link: '/play/city-world' }
         ]
+      },
+      {
+        text: 'Community',
+        items: [
+          { text: 'Discord', link: 'https://discord.gg/aeRReEaNnm' },
+          { text: 'GitHub Discussions', link: 'https://github.com/miners-online/discussions' }
+        ]
       }
     ],
-
     sidebar: [
       {
         text: 'Play',
@@ -28,9 +34,5 @@ export default defineConfig({
         ]
       }
     ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
   }
 })
