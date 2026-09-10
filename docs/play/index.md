@@ -36,8 +36,8 @@ href="./play/nations/"
 4. Government and politics
 ::::
 
-::: info Develop
-Develop is our game mode focused around technical constructions and creative freedom.
+::: info Construct
+Construct is our game mode focused around technical constructions and creative freedom.
 
 This uses our light Fabric modpack focusing on automation and computing.
 
@@ -45,8 +45,8 @@ Supports only 26.2 on Java Edition.
 
 <VPButton
 theme="brand"
-text="Explore Develop"
-href="./play/develop/"
+text="Explore Construct"
+href="./play/construct/"
 />
 :::
 

@@ -1,6 +1,6 @@
-# Develop
+# Construct
 
-Develop is our game mode focused around technical constructions and creative freedom.
+Construct is our game mode focused around technical constructions and creative freedom.
 
 Supports only 26.2 on Java Edition. Requires the modpack to be installed.
 
@@ -17,4 +17,4 @@ To get started, follow these steps:
 2. Download and install our Fabric modpack.
 3. Launch Minecraft with the Fabric modpack
 4. Connect to the server using the IP: `play.minersonline.uk`
-5. Select the "Develop" game mode from the lobby and start building!
+5. Select the "Construct" game mode from the lobby and start building!

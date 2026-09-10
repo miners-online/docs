@@ -33,8 +33,8 @@ export default defineConfig({
         text: 'Play',
         items: [
           { text: 'Getting Started', link: '/play/' },
-          { text: 'Nations', link: '/play/nations' },
-          { text: 'Develop', link: '/play/develop' }
+          { text: 'Construct', link: '/play/construct' },
+          { text: 'Nations', link: '/play/nations' }
         ]
       },
       { text: 'Our Team', link: '/team/' }
