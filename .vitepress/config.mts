@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress'
 
+const now = new Date()
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "docs",
@@ -34,5 +36,9 @@ export default defineConfig({
         ]
       }
     ],
+    footer: {
+      message: 'Miners Online, a free-to-play, Minecraft server. NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.',
+      copyright: `Copyright © ${now.getFullYear()} Samuel Hulme, Miners Online`
+    }
   }
 })
