@@ -3,6 +3,7 @@
     "@iconify-json/lucide": "^1.2.131",
     "vitepress": "^2.0.0-alpha.20"
   },
+  "packageManager": "pnpm@12.3.4",
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
