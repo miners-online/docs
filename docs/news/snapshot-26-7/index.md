@@ -5,7 +5,7 @@ description: "Snapshot 26.7 introduces internal server discovery and a new tempo
 date: "2026-07-24"
 authors:
   - samuelh2005
-tags: ["lobby", "server-discovery"],
+tags: ["lobby", "server-discovery"]
 category: "changelog"
 ---
 
