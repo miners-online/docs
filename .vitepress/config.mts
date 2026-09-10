@@ -34,7 +34,8 @@ export default defineConfig({
           { text: 'Nations', link: '/play/nations' },
           { text: 'Develop', link: '/play/develop' }
         ]
-      }
+      },
+      { text: 'Our Team', link: '/team/' }
     ],
     footer: {
       message: 'Miners Online, a free-to-play, Minecraft server. NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.',
