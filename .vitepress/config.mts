@@ -10,13 +10,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      {
-        text: 'Play',
-        items: [
-          { text: 'Survival', link: '/play/survival' },
-          { text: 'City World', link: '/play/city-world' }
-        ]
-      },
+      { text: 'Play', link: '/play/' },
       {
         text: 'Community',
         items: [
@@ -29,8 +23,9 @@ export default defineConfig({
       {
         text: 'Play',
         items: [
-          { text: 'Survival', link: '/play/survival' },
-          { text: 'City World', link: '/play/city-world' }
+          { text: 'Getting Started', link: '/play/' },
+          { text: 'Nations', link: '/play/nations' },
+          { text: 'Develop', link: '/play/develop' }
         ]
       }
     ],
