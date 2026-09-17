@@ -14,12 +14,25 @@ export default defineConfig({
   ],
 
   cleanUrls: true,
+
+  transformPageData(pageData) {
+    // Pages using the `article` layout never have a sidebar: default
+    // `sidebar` to false for them here, at build time, so there is
+    // simply no sidebar data for the page in the first place (rather
+    // than hiding one at runtime). Authors of article pages no longer
+    // need to set `sidebar: false` themselves.
+    if (pageData.frontmatter.layout === 'article' && pageData.frontmatter.sidebar === undefined) {
+      pageData.frontmatter.sidebar = false
+    }
+  },
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: 'https://github.com/miners-online/.github/blob/main/profile/logos/favicon-160x160-min.png?raw=true',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Play', link: '/play/' },
+      { text: 'News', link: '/news/' },
       {
         text: 'Community',
         items: [

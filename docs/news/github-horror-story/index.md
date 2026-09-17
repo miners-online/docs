@@ -1,5 +1,5 @@
 ---
-sidebar: false
+layout: article
 title: 'GitHub Horror Story: When Our Site Was Stolen in the Dark'
 description: A detailed account of how our website was compromised and the steps taken to resolve the issue.
 date: "2024-10-28"

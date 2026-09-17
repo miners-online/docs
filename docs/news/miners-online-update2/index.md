@@ -1,5 +1,5 @@
 ---
-sidebar: false
+layout: article
 title: 'Miners Online Update 2: New website and infrastructure'
 description: "Miners Online has a new website and backend infrastructure! See our new website design, dynamic MOTD, server links, and forced hosts."
 date: "2026-05-01"

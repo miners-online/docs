@@ -1,5 +1,5 @@
 ---
-sidebar: false
+layout: article
 title: "Snapshot 26.7: Internal server discovery and new temporary lobby"
 description: "Snapshot 26.7 introduces internal server discovery and a new temporary lobby for Miners Online."
 date: "2026-07-24"
